@@ -25,7 +25,7 @@ Shader "Graph/Point"
 
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
-            o.Albedo.rg = IN.worldPos.xy * 0.5  + 0.5;
+            o.Albedo = IN.worldPos * 0.5  + 0.5;
             o.Smoothness = _Smoothness;
         }
         ENDCG

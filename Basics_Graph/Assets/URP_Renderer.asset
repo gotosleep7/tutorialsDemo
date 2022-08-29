@@ -51,4 +51,8 @@ MonoBehaviour:
   m_AccurateGbufferNormals: 0
   m_ClusteredRendering: 0
   m_TileSize: 32
+<<<<<<< HEAD
   m_IntermediateTextureMode: 0
+=======
+  m_IntermediateTextureMode: 1
+>>>>>>> 4099d0b553a939b782e06b440e81e8c852e4f902
