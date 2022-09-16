@@ -1631,7 +1631,7 @@ GameObject:
   - component: {fileID: 397707421}
   - component: {fileID: 397707422}
   m_Layer: 5
-  m_Name: loginModel
+  m_Name: LoginModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2077,7 +2077,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1132746773}
         m_TargetAssemblyTypeName: Login, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: OnLogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2100,7 +2100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7921569, g: 0.81960785, b: 0.84313726, a: 1}
+  m_Color: {r: 0.13725491, g: 0.23921569, b: 0.34117648, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4025,7 +4025,7 @@ GameObject:
   - component: {fileID: 975655760}
   - component: {fileID: 975655761}
   m_Layer: 5
-  m_Name: Normal Login
+  m_Name: Normal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4248,7 +4248,7 @@ GameObject:
   - component: {fileID: 1012563187}
   - component: {fileID: 1012563188}
   m_Layer: 5
-  m_Name: LMS Login
+  m_Name: LMS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4882,9 +4882,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e8c082ee4726e543b797918532747b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  userId: {fileID: 0}
-  password: {fileID: 0}
-  loginModel: {fileID: 0}
+  userIdInputField: {fileID: 1890065550}
+  passwordInputField: {fileID: 1341274581}
+  loginModel: {fileID: 397707422}
+  AutoLogin: {fileID: 1474334720}
+  loginButton: {fileID: 460440775}
+  FailMessage: {fileID: 1158699773}
 --- !u!1 &1156476447
 GameObject:
   m_ObjectHideFlags: 0
@@ -4943,7 +4946,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Audto Login
+  m_text: 'user id or password '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5241,7 +5244,7 @@ GameObject:
   - component: {fileID: 1186536101}
   - component: {fileID: 1186536100}
   m_Layer: 5
-  m_Name: User ID
+  m_Name: title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7172,7 +7175,7 @@ GameObject:
   - component: {fileID: 1585995020}
   - component: {fileID: 1585995019}
   m_Layer: 5
-  m_Name: Password
+  m_Name: title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8263,6 +8266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
